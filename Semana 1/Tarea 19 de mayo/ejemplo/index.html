@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Sistema de Gestión de Bibliotecas</h1>
+
+    <div id="formulario">
+        <h2>Agregar Libro/Revista</h2>
+        <form id="agregar-form">
+            <input type="text" id="titulo" placeholder="Título" required>
+            <input type="text" id="autor" placeholder="Autor" required>
+            <input type="text" id="genero" placeholder="Género" required>
+            <input type="number" id="anio" placeholder="Año" required>
+            <input type="number" id="numeroEdicion" placeholder="Número de Edición (Solo revistas)">
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+
+    <div id="coleccion">
+        <h2>Colección</h2>
+        <ul id="coleccion-lista"></ul>
+    </div>
+
+    <div id="prestamo">
+        <h2>Prestar Libro</h2>
+        <form id="prestamo-form">
+            <input type="text" id="usuario" placeholder="Nombre del Usuario" required>
+            <input type="text" id="libro" placeholder="Título del Libro" required>
+            <button type="submit">Prestar</button>
+        </form>
+        <ul id="prestamos-lista"></ul>
+    </div>
+
+    <script src="js/Libro.js"></script>
+    <script src="js/Revista.js"></script>
+    <script src="js/Biblioteca.js"></script>
+    <script src="js/Usuario.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

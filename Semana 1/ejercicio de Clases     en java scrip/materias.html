@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias</title>
+</head>
+<body>
+    <script type="module">
+        // Importar las clases Materia y datosMaterias del archivo materias.js
+        import { Materia, datosMaterias } from './materias.js';
+
+        // Crear instancias de las materias
+        const matematica = new Materia('Matemáticas', 3, 'Sr. López');
+        const fisica = new Materia('Física', 4, 'Dra. Martínez');
+        const informatica = new Materia('Informática', 5, 'Ing. García');
+
+        // Mostrar información de las materias
+        console.log(matematica.mostrarInformacion());
+        console.log(fisica.mostrarInformacion());
+        console.log(informatica.mostrarInformacion());
+
+        // Mostrar datos generales de las materias
+        console.log(datosMaterias);
+    </script>
+</body>
+</html>
